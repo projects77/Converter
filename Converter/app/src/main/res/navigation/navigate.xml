@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.converter.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_currencyFragment4"
+            app:destination="@id/currencyFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_massFragment"
+            app:destination="@id/massFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_unitsFragment"
+            app:destination="@id/tempFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tempFragment"
+            app:destination="@id/unitsFragment" />
+
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/currencyFragment"
+        android:name="com.example.converter.CurrencyFragment"
+        android:label="CurrencyFragment"
+        tools:layout="@layout/fragment" />
+    <fragment
+        android:id="@+id/massFragment"
+        android:name="com.example.converter.MassFragment"
+        android:label="MassFragment"
+        tools:layout="@layout/fragment" />
+    <fragment
+        android:id="@+id/unitsFragment"
+        android:name="com.example.converter.UnitsFragment"
+        android:label="UnitsFragment"
+        tools:layout="@layout/fragment" />
+    <fragment
+        android:id="@+id/tempFragment"
+        android:name="com.example.converter.TempFragment"
+        android:label="TempFragment"
+        tools:layout="@layout/fragment" />
+
+
+
+</navigation>
